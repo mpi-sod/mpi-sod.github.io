@@ -1,0 +1,95 @@
+
+body {
+	text-align: left;
+}
+
+h1 {
+	text-align: left;
+	font-size: 20pt;
+	color: #00445f;
+}
+
+#signature {
+	text-align: right;
+}
+
+.history .text-and-image{
+	display: flex;
+	width: 100%;
+	flex-flow: row wrap;
+}
+
+.history .paragraph {
+	flex: 1.5;
+	margin: 5px;
+}
+
+.history .img {
+	flex: 1;
+	margin: 5px;
+	width: 40%;
+	height: auto;
+	border-left: solid 3px #eeeeee;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.history .img img {
+	width: 50%;
+}
+
+.director {
+	align-items: center;
+	text-align: center;
+}
+
+.director img {
+	width: 50%;
+}
+
+@media only screen and (max-width: 980px) {
+
+	.history {
+		margin-top: 15px;
+	}
+
+	.history .text-and-image {
+		flex-flow: column;
+	}
+
+	.history .paragraph {
+	flex: 1;
+	margin: 0;
+	}
+
+	.history .img {
+	flex:1;
+	margin: 0;
+	width: 100%;
+	border-left: None;
+	}
+
+	.history .img img {
+		width: 100%;
+	}
+
+	.director blockquote {
+		width: 98%;
+		margin: 0;
+		margin-top: 15px;
+		margin-right: 0px;
+		border-left: none;
+		padding: 0;
+	}
+
+	.director img {
+		width: 100%;
+	}
+
+	h1 {
+		margin: auto;
+		text-align: center;
+		margin-top: 15px;
+	}
+}

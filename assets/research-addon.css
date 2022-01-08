@@ -1,0 +1,48 @@
+
+.departments {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 85%;
+	margin-top: 10pt;
+	margin-bottom:10pt;
+}
+
+.dept {
+	display: block;
+	background-color: #eeeeee;
+	width: 32%;
+}
+
+.dept :first-child {
+	border-left: none;
+}
+
+.dept .body {
+	text-align: justify;
+	margin: 5px;
+	font-size: 10pt;
+}
+
+.dept .title {
+	font-weight: bold;
+}
+
+.dept img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+	.departments {
+		flex-flow: column;
+		width: 100%;
+	}
+
+	.dept {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}

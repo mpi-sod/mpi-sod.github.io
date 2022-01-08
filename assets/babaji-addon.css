@@ -1,0 +1,62 @@
+
+h1.page-head {
+	/*text-align: center;*/
+	font-size: 25pt;
+	font-weight: bold;
+}
+
+.about-leader {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #eeeeee;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.about-leader .dp {
+	width: 33%;
+	margin: auto;
+}
+
+.about-leader .dp img {
+	width: 100%;
+	height: auto;
+}
+
+.about-leader .text {
+	width: 64%;
+	padding: 10pt;
+}
+
+.graphic img {
+	width: 50%;
+	height: auto;
+}
+
+.full-width img {
+	width: 100%;
+	height: auto;
+}
+
+#donts {
+	color: #7f1400
+}
+
+@media only screen and (max-width: 980px) {
+	.about-leader {
+		flex-flow: column;
+	}
+
+	.about-leader .dp {
+		width: 100%
+	}
+
+	.about-leader .text {
+		width: 93%;
+		margin: 0px;
+	}
+
+	.graphic img {
+		width: 100%;
+	}
+}

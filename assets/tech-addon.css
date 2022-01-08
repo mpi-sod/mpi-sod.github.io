@@ -1,0 +1,43 @@
+
+.tech-item {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #eeeeee;
+	display: flex;
+	flex-flow : row wrap;
+}
+
+.tech-item .tech-img {
+	text-align: left;
+	margin: auto;
+	margin-left: 0;
+	width: 33%;
+}
+
+.tech-item .tech-img img {
+	width: 100%;
+}
+
+.tech-item .tech-body {
+	width: 62%;	
+	margin: auto;
+}
+
+@media only screen and (max-width: 980px) {
+	.tech-item {
+		flex-flow: column;
+	}
+
+	.tech-item .tech-img {
+		width: 100%
+	}
+
+	.tech-item .tech-body{
+		width: 96%
+	}
+
+	#useless-aghori {
+		display: none;
+	}
+}
